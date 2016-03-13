@@ -22,6 +22,6 @@ def find_solution(case):
                 return sorted([idx_item + 1, idx_other_item + 1])
 
 if __name__ == '__main__':
-    with open(sys.argv[1].replace('.in', 'out'), 'w') as out_file:
+    with open(sys.argv[1].replace('.in', '.out'), 'w') as out_file:
         out_file.write('\n'.join('Case #{}: {} {}'.format(idx_case + 1, *find_solution(case))
                                  for idx_case, case in enumerate(parse_input(sys.argv[1]))))
